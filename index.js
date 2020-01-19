@@ -1,7 +1,7 @@
 
-
-document.querySelector('button').addEventListener('click', handleClick);
-
-function handleClick(){
-
+for (let i = 0; i < document.querySelectorAll('.drum').length; i++){
+  document.querySelectorAll('.drum')[i].addEventListener('click', function() {
+    let audio = new Audio('sounds/tom-1.mp3');
+    audio.play();
+  });
 }
